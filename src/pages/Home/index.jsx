@@ -4,7 +4,7 @@ import { ShowProduct } from "../../components/ShowProduct/index.jsx";
 export function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar showMenu={true} />
       <div className="container">
         <div className="titulo text-center">
           <h1>Nosso Cardápio</h1>
