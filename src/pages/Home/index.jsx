@@ -1,5 +1,6 @@
 import { Navbar } from "../../components/Navbar/index.jsx";
 import { ShowProduct } from "../../components/ShowProduct/index.jsx";
+import { produtos } from "../../dados.js";
 
 export function Home() {
   return (
@@ -16,10 +17,18 @@ export function Home() {
       </div>
 
       <div className="text-center">
-        <ShowProduct />
-        <ShowProduct />
-        <ShowProduct />
-        <ShowProduct />
+        {produtos.map(function (prod) {
+          return (
+            <ShowProduct
+              key={prod.id}
+              id={prod.id}
+              nome={prod.nome}
+              descricao={prod.descricao}
+              preco={prod.preco}
+              foto={prod.foto}
+            />
+          );
+        })}
       </div>
     </>
   );

@@ -1,23 +1,24 @@
 .lista-produtos {
-    height: calc(100% - 250px);
-    margin-left: 20px;
-    margin-right: 20px;
-    overflow: auto;
+  height: calc(100% - 250px);
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: auto;
 }
 
 .footer-cart {
-    margin-top: 20px;
-    border-top: 2px solid #e7e7e7;
+  margin-top: 20px;
+  border-top: 2px solid #e7e7e7;
 }
 
 .footer-cart-value {
-    margin-top: 20px;
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  /*Alteração em Meu pedido - Finalizar pedido*/
+  padding: 0 40px;
 }
 
 .footer-strong {
-    font-weight: bold;
+  font-weight: bold;
 }
-
